@@ -1,0 +1,1281 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Syne:wght@700&display=swap');
+
+:root {
+    --arckytec-font: 'Inter', sans-serif;
+    --arckytec-font-two: 'Syne', sans-serif;
+}
+
+body,
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrapper {
+    width: 100%;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1350px;
+}
+
+
+/* --------------------------------------- HEADER --------------------------------------- */
+
+header {
+    background-color: rgb(33, 36, 42);
+    height: 100px;
+}
+
+.nav-container {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .left-menu,
+header ul,
+header .right-menu,
+header .right-menu>div:nth-child(2) {
+    display: flex;
+    align-items: center;
+}
+
+header .mobile {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    display: none;
+}
+
+header .left-menu .logo {
+    margin-right: 100px;
+}
+
+header ul .active {
+    margin: 0;
+    color: rgb(184, 143, 117);
+}
+
+header ul a {
+    margin-left: 40px;
+}
+
+header ul a {
+    font-family: var(--arckytec-font-two);
+    color: white;
+}
+
+header .right-menu .telephone {
+    margin-left: 30px;
+}
+
+header .right-menu .telephone i {
+    margin-right: 15px;
+}
+
+header .magnifying-glass a,
+header .magnifying-glass-mob a {
+    color: white;
+    font-size: 18px;
+}
+
+header ul li:hover,
+header .magnifying-glass a:hover,
+header .right-menu .telephone i:hover,
+header .right-menu .telephone a:hover {
+    color: rgb(184, 143, 117);
+}
+
+header .right-menu .telephone i {
+    color: white;
+    font-size: 30px;
+}
+
+header .right-menu .telephone p {
+    color: #BABBBD;
+    font-family: var(--arckytec-font);
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+header .right-menu .telephone a {
+    color: white;
+    font-family: var(--arckytec-font);
+    font-weight: bold;
+}
+
+/* --------------------------------------- HERO --------------------------------------- */
+
+.hero {
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    height: 740px;
+}
+
+.hero>img {
+    position: absolute;
+    clip-path: polygon(22% 0%, 100% 0%, 100% 100%, 0% 100%);
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.hero .container {
+    position: relative;
+    z-index: 2;
+    padding-top: 130px;
+}
+
+.hero .text-container {
+    width: 700px;
+}
+
+.hero .container p:nth-child(1) {
+    font-family: var(--arckytec-font);
+    font-weight: 900;
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: rgb(184, 143, 117);
+}
+
+.hero .container p:nth-child(3) {
+    font-family: var(--arckytec-font);
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.hero .container h1 {
+    font-family: var(--arckytec-font-two);
+    font-size: 80px;
+    margin-bottom: 10px;
+}
+
+.hero .btn-container button {
+    padding: 18px;
+    width: 160px;
+    font-size: 17px;
+}
+
+.hero .btn-container button:nth-child(1) {
+    border: 1px solid rgb(184, 143, 117);
+    color: white;
+    background-color: rgb(184, 143, 117);
+    margin-right: 10px;
+}
+
+.hero .btn-container button:nth-child(2) {
+    border: 1px solid rgb(184, 143, 117);
+    color: rgb(184, 143, 117);
+    background-color: transparent;
+}
+
+.hero .btn-container button:nth-child(1):hover {
+    background-color: black;
+}
+
+.hero .btn-container button:nth-child(2):hover {
+    background-color: rgb(184, 143, 117);
+    color: white;
+}
+
+.hero .get-in-touch div {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 225px;
+    width: 225px;
+    border-radius: 50%;
+    background-color: rgb(184, 143, 117);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero .get-in-touch div i {
+    font-size: 100px;
+    color: white;
+}
+
+/* --------------------------------------- ABOUT --------------------------------------- */
+
+.about {
+    padding: 130px 0;
+    background-color: rgb(33, 36, 42);
+}
+
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about .images {
+    width: max-content;
+    position: relative;
+}
+
+.about .images img:nth-child(2) {
+    position: absolute;
+    right: -150px;
+    top: 80px;
+    border: 15px solid white;
+}
+
+.about .images .success-container {
+    padding: 20px;
+    position: absolute;
+    bottom: 4px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+}
+
+.about .images .success-container .medal {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+    font-size: 45px;
+    background-color: rgb(245, 245, 245);
+    color: rgb(184, 143, 117);
+}
+
+.about .images .success-container .medal:hover {
+    background-color: rgb(184, 143, 117);
+    color: rgb(245, 245, 245);
+}
+
+.about .images .success-container p {
+    font-family: var(--arckytec-font-two);
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.about .images .success-container h1 {
+    font-family: var(--arckytec-font);
+    font-size: 40px;
+    color: rgb(184, 143, 117);
+}
+
+.about .text-container {
+    width: 45%;
+    color: white;
+}
+
+.about .text-container div:nth-child(1) span {
+    display: inline-block;
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    background-color: rgb(184, 143, 117);
+}
+
+.about .text-container div:nth-child(1) {
+    display: flex;
+    align-items: center;
+}
+
+.about .text-container div:nth-child(1) p {
+    margin: 0 10px;
+    font-family: var(--arckytec-font);
+    color: rgb(184, 143, 117);
+    font-size: 20px;
+}
+
+.about .text-container h1 {
+    font-family: var(--arckytec-font-two);
+    font-size: 60px;
+    margin: 20px 0;
+}
+
+.about .text-container>p {
+    font-family: var(--arckytec-font);
+    font-size: 17px;
+    color: #BABBBD;
+}
+
+.about .text-container .list {
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about .text-container .list span {
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+    column-gap: 15px;
+    font-size: 20px;
+    font-family: var(--arckytec-font);
+}
+
+.about .text-container .list span i {
+    color: rgb(184, 143, 117);
+}
+
+.about .text-container button {
+    padding: 20px 30px;
+    font-size: 20px;
+    font-family: var(--arckytec-font);
+    background-color: rgb(184, 143, 117);
+    color: white;
+}
+
+.about .text-container button:hover {
+    color: rgb(184, 143, 117);
+    background-color: white;
+}
+
+/* --------------------------------------- SERVICES --------------------------------------- */
+
+.services {
+    padding: 130px 0;
+}
+
+.services .text-container div:nth-child(1) span {
+    display: inline-block;
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    background-color: rgb(184, 143, 117);
+}
+
+.services .text-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.services .text-container div:nth-child(1) {
+    display: flex;
+    align-items: center;
+}
+
+.services .text-container div:nth-child(1) p {
+    margin: 0 10px;
+    font-family: var(--arckytec-font);
+    color: rgb(184, 143, 117);
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.services .text-container>h1 {
+    font-family: var(--arckytec-font-two);
+    font-size: 60px;
+    margin: 10px 0 70px;
+}
+
+.services .card-container {
+    display: flex;
+    gap: 30px;
+}
+
+.services .card-container .card {
+    position: relative;
+    box-shadow: 0px 4px 63px 0px rgba(15, 28, 51, 0.10);
+}
+
+.services img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.services .card-container .icon {
+    position: absolute;
+    top: 245px;
+    right: 20px;
+    height: 70px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: rgb(184, 143, 117);
+    background-color: white;
+    box-shadow: 0px 4px 63px 0px rgba(15, 28, 51, 0.10);
+}
+
+.services .card-container .text {
+    padding: 20px;
+}
+
+.services .card-container .text h2 {
+    font-family: var(--arckytec-font-two);
+    padding-bottom: 20px;
+    border-bottom: 1px solid #BABBBD;
+}
+
+.services .card-container .text p {
+    margin: 20px 0 50px;
+    font-family: var(--arckytec-font);
+    line-height: 25px;
+}
+
+.services .card-container button {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 15px 30px;
+    font-family: var(--arckytec-font);
+    font-size: 20px;
+    background-color: transparent;
+    border: 1px solid rgb(184, 143, 117);
+    color: rgb(184, 143, 117);
+}
+
+
+.services .card-container button:hover,
+.services .card-container .card:hover .icon {
+    background-color: rgb(184, 143, 117);
+    color: white;
+}
+
+/* --------------------------------------- PROJECT --------------------------------------- */
+
+.project {
+    background-color: rgb(33, 36, 42);
+}
+
+.project img {
+    position: absolute;
+    right: 0;
+}
+
+.project .text-container>div:nth-child(1) span {
+    display: inline-block;
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    background-color: rgb(184, 143, 117);
+}
+
+.project .text-container>div:nth-child(1) {
+    display: flex;
+    align-items: center;
+}
+
+.project .text-container>div:nth-child(1) p {
+    font-family: var(--arckytec-font);
+    color: rgb(184, 143, 117);
+    font-size: 20px;
+    padding: 0 10px;
+    font-weight: 900;
+}
+
+.project .text-container {
+    padding: 109px 0;
+    width: 50%;
+    margin-bottom: 10px;
+}
+
+.project .text-container h1 {
+    font-family: var(--arckytec-font-two);
+    color: white;
+    font-size: 60px;
+}
+
+.project .text-container>p {
+    font-family: var(--arckytec-font);
+    width: 75%;
+    color: #BABBBD;
+    margin: 30px 0;
+    line-height: 25px;
+}
+
+.project .text-container .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 30px;
+}
+
+.project .text-container .card-container .card {
+    width: 33%;
+}
+
+.project .text-container .card-container .card p {
+    font-family: var(--arckytec-font);
+    color: rgb(184, 143, 117);
+}
+
+.project .text-container .card-container .card h2 {
+    font-family: var(--arckytec-font-two);
+    color: white;
+    margin-top: 10px;
+}
+
+.project .text-container button {
+    margin: 20px 0;
+    background-color: rgb(184, 143, 117);
+    color: white;
+    font-family: var(--arckytec-font);
+    font-size: 18px;
+    padding: 15px 40px;
+}
+
+.project .text-container button:hover {
+    color: rgb(184, 143, 117);
+    background-color: white;
+}
+
+/* --------------------------------------- EXPERTS --------------------------------------- */
+
+.expert {
+    padding: 130px 0;
+}
+
+.expert .text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.expert .text-container>div:nth-child(1) {
+    display: flex;
+    align-items: center;
+}
+
+.expert .text-container>div:nth-child(1) span {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: rgb(184, 143, 117);
+}
+
+.expert .text-container>div:nth-child(1) p {
+    font-family: var(--arckytec-font);
+    color: rgb(184, 143, 117);
+    font-size: 20px;
+    padding: 0 10px;
+    font-weight: 900;
+}
+
+.expert .text-container h1 {
+    text-align: center;
+    font-family: var(--arckytec-font-two);
+    font-size: 60px;
+    margin: 10px 0 30px 0;
+    width: 60%;
+}
+
+.expert .card-container {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+}
+
+.expert .card-container .card:nth-child(2),
+.expert .card-container .card:nth-child(4) {
+    margin-top: 40px;
+}
+
+.expert .card-container .card {
+    position: relative;
+}
+
+.expert .card-container .card img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.expert .card-container .box {
+    width: 90%;
+    padding: 20px;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%);
+    background-color: white;
+    box-shadow: 0px 4px 63px 0px rgba(15, 28, 51, 0.10);
+}
+
+.expert .card-container .card:nth-child(2)>.box,
+.expert .card-container .card:nth-child(4)>.box {
+    bottom: -40px;
+}
+
+.expert .card-container .box h2 {
+    font-family: var(--arckytec-font-two);
+    margin-bottom: 10px;
+}
+
+.expert .card-container .box p {
+    font-family: var(--arckytec-font);
+}
+
+.expert .card-container .box .icon {
+    position: absolute;
+    top: -20px;
+    right: 20px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(184, 143, 117);
+    color: white;
+}
+
+/* --------------------------------------- TESTIMONIALS --------------------------------------- */
+
+.testimonials {
+    padding: 130px 0;
+    background-color: rgb(33, 36, 42);
+}
+
+.testimonials .text-container>div:nth-child(1) {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.testimonials .text-container>div:nth-child(1) span {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: rgb(184, 143, 117);
+}
+
+.testimonials .text-container>div:nth-child(1) p {
+    font-family: var(--arckytec-font);
+    color: rgb(184, 143, 117);
+    font-size: 20px;
+    padding: 0 10px;
+    font-weight: 900;
+}
+
+.testimonials .text-container h1 {
+    color: white;
+    font-size: 60px;
+    font-family: var(--arckytec-font-two);
+}
+
+.testimonials .card-container {
+    display: flex;
+    column-gap: 30px
+}
+
+.testimonials .card-container .card {
+    background-color: white;
+    padding: 30px;
+    margin-top: 50px;
+}
+
+.testimonials .card-container .card>div:nth-child(1) {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.testimonials .card-container .card>div:nth-child(1) img {
+    border-radius: 50%;
+}
+
+.testimonials .card-container .card>div:nth-child(1) h2 {
+    font-family: var(--arckytec-font-two);
+}
+
+.testimonials .card-container .card>div:nth-child(1) p {
+    margin: 10px 0;
+    font-family: var(--arckytec-font)
+}
+
+.testimonials .card-container .card-body p {
+    font-family: var(--arckytec-font);
+    line-height: 25px;
+}
+
+/* --------------------------------------- MARQUEE --------------------------------------- */
+
+.marquee-section {
+    padding: 60px 0;
+}
+
+marquee h1 {
+    font-family: var(--arckytec-font);
+    font-size: 100px;
+    color: transparent;
+    -webkit-text-stroke: 0.1px rgb(195, 195, 195);
+}
+
+marquee:hover h1 {
+    -webkit-text-stroke: 0.1px rgb(184, 143, 117);
+}
+
+/* --------------------------------------- BLOG --------------------------------------- */
+
+.blog {
+    padding-bottom: 130px;
+}
+
+.blog .text-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.blog .text-container>div>div:nth-child(1) {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.blog .text-container>div>div:nth-child(1) span {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: rgb(184, 143, 117);
+}
+
+.blog .text-container>div>div:nth-child(1) p {
+    font-family: var(--arckytec-font);
+    color: rgb(184, 143, 117);
+    font-size: 20px;
+    padding: 0 10px;
+    font-weight: 900;
+}
+
+.blog .text-container>div h1 {
+    font-family: var(--arckytec-font-two);
+    font-size: 60px;
+}
+
+.blog .text-container button {
+    padding: 15px 30px;
+    border: none;
+    font-family: var(--arckytec-font);
+    font-size: 20px;
+    background-color: rgb(184, 143, 117);
+    color: white;
+}
+
+.blog .text-container button:hover {
+    background-color: black;
+}
+
+.blog .card-container {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 20px;
+}
+
+.blog .card {
+    position: relative;
+    width: 33%;
+}
+
+.blog .card img {
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+}
+
+
+.blog .card-container .card>div:nth-child(2) {
+    font-family: var(--arckytec-font);
+    position: absolute;
+    bottom: 177px;
+    left: 20px;
+    background-color: rgb(184, 143, 117);
+    color: white;
+    padding: 15px;
+}
+
+.blog .card-container .card>div:nth-child(2):hover {
+    color: rgb(184, 143, 117);
+    background-color: white;
+}
+
+.blog .card-container h2 {
+    font-family: var(--arckytec-font-two);
+    padding: 20px 0;
+}
+
+.blog .card-container h2:hover {
+    color: rgb(184, 143, 117);
+}
+
+.blog .card>div:nth-child(4) {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid black;
+    padding: 20px 0;
+}
+
+.blog .card>div:nth-child(4) p {
+    font-family: var(--arckytec-font);
+    font-size: 13px;
+}
+
+/* --------------------------------------- REQUEST --------------------------------------- */
+
+.request {
+    background-color: rgb(184, 143, 117);
+    padding: 40px;
+    position: relative;
+}
+
+.request img {
+    position: absolute;
+    clip-path: polygon(0 0, 77% 0, 100% 100%, 0 100%);
+    max-width: 720px;
+    bottom: 0;
+    left: 0;
+}
+
+.request .container>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.request .container>div h1 {
+    padding-left: 400px;
+    color: white;
+    font-family: var(--arckytec-font);
+    font-size: 30px;
+    width: 65%;
+    line-height: 40px;
+}
+
+.request .container>div button {
+    border: none;
+    padding: 20px 40px;
+    background-color: white;
+    font-size: 20px;
+}
+
+.request .container>div button:hover {
+    background-color: black;
+    color: white;
+}
+
+/* --------------------------------------- FOOTER --------------------------------------- */
+
+footer {
+    padding: 130px 0;
+    background-image: url(/arckytec/assets/images/site-footer-shape-1.jpg);
+    background-position: center;
+    color: white;
+}
+
+footer .container {
+    display: flex;
+}
+
+footer .container>div {
+    width: 25%;
+    padding: 0 12px;
+    display: flex;
+    justify-content: center;
+}
+
+footer .container>div .arckytec p {
+    font-family: var(--arckytec-font);
+    color: #BABBBD;
+    margin: 20px 0;
+}
+
+footer .container>div .arckytec .icons {
+    display: flex;
+    gap: 10px;
+}
+
+footer .container>div .arckytec .icons>div {
+    background-color: rgb(77, 80, 84);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+footer .container>div .arckytec .icons>div:hover {
+    background-color: rgb(184, 143, 117);
+}
+
+footer .container>div h3 {
+    font-family: var(--arckytec-font-two);
+    padding-bottom: 5px;
+    border-bottom: 2px solid rgb(184, 143, 117);
+}
+
+footer .container>div .service>div {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+footer .container>div .service>div a {
+    color: #BABBBD;
+    font-family: var(--arckytec-font);
+}
+
+footer .container>div .service>div a:hover {
+    color: rgb(184, 143, 117);
+    font-family: var(--arckytec-font);
+}
+
+footer .container>div .contact {
+    width: 70%;
+}
+
+footer .container>div .contact>div {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    font-family: var(--arckytec-font);
+    color: #BABBBD;
+}
+
+footer .container>div .contact a {
+    color: #BABBBD;
+}
+
+footer .container>div .contact a:hover {
+    color: rgb(184, 143, 117);
+}
+
+footer .container>div .contact a>i {
+    color: rgb(184, 143, 117);
+}
+
+footer .container>div .news>div {
+    color: #BABBBD;
+    font-family: var(--arckytec-font);
+}
+
+footer .container>div .news p {
+    margin: 20px 0;
+}
+
+footer .container>div .news input {
+    width: 100%;
+    padding: 15px 10px;
+    background-color: transparent;
+    border: 1px solid #BABBBD;
+}
+
+footer .container>div .news form {
+    position: relative;
+}
+
+footer .container>div .news input::placeholder {
+    color: #BABBBD;
+}
+
+footer .container>div .news button {
+    border: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 16px 20px;
+    color: white;
+    background-color: rgb(184, 143, 117);
+}
+
+footer .container>div .news button:hover {
+    color: rgb(184, 143, 117);
+    background-color: white;
+}
+
+/* --------------------------------------- MEDIA --------------------------------------- */
+
+@media only screen and (max-width:1900px) {
+
+    .hero {
+        height: auto;
+    }
+
+    .hero .get-in-touch div {
+        bottom: 130px;
+    }
+
+    .hero .container {
+        padding: 130px 0;
+    }
+
+    .hero>img,
+    .project img {
+        display: none;
+    }
+
+    .project .text-container {
+        width: 100%;
+    }
+
+    .request img {
+        display: none;
+    }
+
+    .request .container>div h1 {
+        padding-left: 0;
+    }
+}
+
+@media only screen and (max-width:1350px) {
+    .container {
+        max-width: 1140px;
+    }
+
+    .about .images img:nth-child(2) {
+        right: -100px;
+    }
+
+    .services .card-container .icon {
+        top: 180px
+    }
+}
+
+@media only screen and (max-width:1200px) {
+    .container {
+        max-width: 960px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    header .mobile {
+        display: flex;
+    }
+
+    header .magnifying-glass a {
+        display: none;
+    }
+
+    header .left-menu .logo {
+        margin: 0;
+    }
+
+    .about-container {
+        flex-direction: column;
+    }
+
+    .about .text-container {
+        width: 55%;
+        margin-top: 30px;
+    }
+
+    .services .card-container .icon {
+        top: 140px
+    }
+
+    .services .card-container button {
+        padding: 15px 23px;
+    }
+
+    .project .project-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .project .text-container {
+        width: 60%;
+    }
+
+    .expert .card-container {
+        flex-wrap: wrap;
+        column-gap: 0;
+    }
+
+    .expert .card-container .card {
+        width: 50%;
+        padding: 0 12px 12px 12px;
+    }
+
+    .expert .card-container .card:nth-child(2),
+    .expert .card-container .card:nth-child(4) {
+        margin: 0;
+    }
+
+    .expert .card-container .card:nth-child(2)>.box,
+    .expert .card-container .card:nth-child(4)>.box {
+        bottom: 0;
+    }
+
+    .request .container>div h1 {
+        max-width: 500px;
+    }
+
+    footer .container {
+        flex-wrap: wrap;
+    }
+
+    footer .container>div {
+        width: 50%;
+        justify-content: flex-start;
+    }
+
+    footer .container>div:nth-child(3),
+    footer .container>div:nth-child(4) {
+        margin-top: 40px;
+    }
+}
+
+@media only screen and (max-width:1000px) {
+    .container {
+        max-width: 720px;
+    }
+
+    .hero .container h1 {
+        font-size: 60px;
+    }
+
+    .hero .get-in-touch div {
+        display: none;
+    }
+
+    .about .text-container {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .services .card-container {
+        flex-wrap: wrap;
+    }
+
+    .services .card-container .icon {
+        top: 430px;
+    }
+
+    .project .text-container {
+        width: 100%;
+    }
+
+    .about .images img:nth-child(2) {
+        display: none;
+    }
+
+    .testimonials .card-container .card:nth-child(2) {
+        display: none;
+    }
+
+    .blog .card-container {
+        flex-wrap: wrap;
+    }
+
+    .blog .card {
+        width: 100%;
+    }
+
+    .blog .card-container .card>div:nth-child(2) {
+        bottom: 147px;
+    }
+
+
+}
+
+@media only screen and (max-width:770px) {
+    .container {
+        max-width: 540px;
+    }
+
+    .hero .container h1,
+    .about .text-container h1,
+    .services .text-container>h1,
+    .project .text-container h1,
+    .expert .text-container h1,
+    .testimonials .text-container h1,
+    .blog .text-container>div h1 {
+        font-size: 40px;
+    }
+
+    .hero .text-container {
+        width: 100%;
+    }
+
+    .services .card-container .icon {
+        top: 310px;
+    }
+
+    .project .text-container .card-container .card {
+        width: 100%;
+    }
+
+    .expert .text-container h1 {
+        width: 100%;
+    }
+
+    .expert .card-container .card {
+        width: 100%;
+    }
+
+    .blog .text-container {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .request .container>div {
+        flex-direction: column;
+    }
+
+    .request .container>div h1 {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    footer .container>div {
+        width: 100%;
+    }
+
+    footer .container>div:nth-child(1) {
+        margin-bottom: 40px;
+    }
+
+    .about .images img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .about .images {
+        width: 100%;
+    }
+
+    header .right-menu>div:nth-child(2) {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:550px) {
+    .container {
+        max-width: 370px;
+    }
+
+    .services .card-container .icon {
+        top: 210px;
+    }
+
+    .blog .card-container .card>div:nth-child(2) {
+        bottom: 177px;
+    }
+}
